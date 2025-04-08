@@ -1,0 +1,42 @@
+﻿@using WebTabanlıProgramlamaOdev2.Models.Entity;
+
+@model List<Table>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Ogrenci Id</th>
+        <th>Ogrenci Ad</th>
+        <th>Ogrenci Soyad</th>
+        <th>Ogrenci Bölüm</th>
+        <th>Ogrenci Mail</th>
+        <th>Ogrenci Yaş</th>
+        <th>SİL     </th>
+        <th>GÜNCELLE</th>
+
+    </tr>
+
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.OgrID</td>
+                <td>@i.OgrAd</td>
+                <td>@i.OgrSoyad</td>
+                <td>@i.OgrBolum</td>
+                <td>@i.OgrMail</td>
+                <td>@i.OgrYas</td>
+                <td><a href="/_1/Sil/@i.OgrID" class="btn btn-danger">SİL</a></td>
+                <td><a href="/_1/Güncelle/@i.OgrID" class="btn btn-success">GÜNCELLE</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/_1/OgrenciEkle/" class="btn btn-primary">YENİ ÖĞRENCİ EKLE</a>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OgrenciOtomasyonuModelStoreContainer" CdmEntityContainer="OgrenciOtomasyonuEntities">
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="OgrenciOtomasyonuModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="OgrID" ColumnName="OgrID" />
+          <ScalarProperty Name="OgrAd" ColumnName="OgrAd" />
+          <ScalarProperty Name="OgrSoyad" ColumnName="OgrSoyad" />
+          <ScalarProperty Name="OgrBolum" ColumnName="OgrBolum" />
+          <ScalarProperty Name="OgrMail" ColumnName="OgrMail" />
+          <ScalarProperty Name="OgrYas" ColumnName="OgrYas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

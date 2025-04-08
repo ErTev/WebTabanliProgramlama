@@ -1,0 +1,42 @@
+﻿@model WebTabanlıProgramlamaOdev2.Models.Entity.Table
+
+@{
+    ViewBag.Title = "Öğrenci Güncelle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form class="form-groups" method="post">
+    <div>
+        <label>Öğrenci ID</label>
+        <input type="text" class="form-control" name="OgrID" value="@Model.OgrID" readonly />
+    </div>
+
+    <div>
+        <label>Öğrenci Adı</label>
+        <input type="text" class="form-control" name="OgrAd" value="@Model.OgrAd" required />
+    </div>
+
+    <div>
+        <label>Öğrenci Soyadı</label>
+        <input type="text" class="form-control" name="OgrSoyad" value="@Model.OgrSoyad" required />
+    </div>
+
+    <div>
+        <label>Öğrenci Bölüm</label>
+        <input type="text" class="form-control" name="OgrBolum" value="@Model.OgrBolum" required />
+    </div>
+
+    <div>
+        <label>Öğrenci Mail</label>
+        <input type="email" class="form-control" name="OgrMail" value="@Model.OgrMail" required />
+    </div>
+
+    <div>
+        <label>Öğrenci Yaş</label>
+        <input type="number" class="form-control" name="OgrYas" value="@Model.OgrYas" required />
+    </div>
+
+    <div style="margin-top:20px">
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+</form>

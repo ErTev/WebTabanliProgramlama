@@ -1,0 +1,37 @@
+﻿
+@model WebTabanlıProgramlamaOdev2.Models.Entity.Table
+
+@{
+    ViewBag.Title = "ÖgrenciGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("GÜNCELLE", "Table", FormMethod.Post))
+{
+   <div class="form-group">
+        @Html.LabelFor(k => k.OgrID)
+        @Html.TextBoxFor(k => k.OgrID, new { @class = "form-control" })
+
+        @Html.LabelFor(k => k.OgrAd)
+        @Html.TextBoxFor(k => k.OgrAd, new { @class = "form-control" })
+
+        @Html.LabelFor(k => k.OgrSoyad)
+        @Html.TextBoxFor(k => k.OgrSoyad, new { @class = "form-control" })
+
+        @Html.LabelFor(k => k.OgrBolum)
+        @Html.TextBoxFor(k => k.OgrBolum, new { @class = "form-control" })
+
+        @Html.LabelFor(k => k.OgrMail)
+        @Html.TextBoxFor(k => k.OgrMail, new { @class = "form-control" })
+
+        @Html.LabelFor(k => k.OgrYas)
+        @Html.TextBoxFor(k => k.OgrYas, new { @class = "form-control" })
+
+       <div>
+           <button class="btn btn-warning">ÖĞRENCİ GÜNCELLE</button>
+       </div>
+
+    </div>
+
+}
+
